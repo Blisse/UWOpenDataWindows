@@ -1,0 +1,6 @@
+[submodule "UWOpenDataWP8"]
+	path = UWOpenDataWP8
+	url = C:/Program Files (x86)/Git/UWOpenDataWP8/
+[submodule "UWOpenDataWindowsBase"]
+	path = UWOpenDataWindowsBase
+	url = C:/Program Files (x86)/Git/UWOpenDataWindowsBase/
