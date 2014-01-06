@@ -126,7 +126,11 @@ namespace UWOpenDataWindowsBase.ViewModels
             var weatherData = await GetData(WeatherDataPropertyName, UwOpenDataApi.GetWeatherData,
                 cancellationToken);
 
-            WeatherData = weatherData.data;
+            if (weatherData != null)
+            {
+                WeatherData = weatherData.data;
+            }
+
         }
 
 

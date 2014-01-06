@@ -64,14 +64,14 @@ namespace UWOpenDataWindowsBase.ViewModels
                 return default(T);
             }
 
-            var eventsListData = await DataManager.Instance.GetData(dataStoryKey, downloadFunc, cancellationToken);
+            var response = await DataManager.Instance.GetData(dataStoryKey, downloadFunc, cancellationToken);
 
-            if (eventsListData.HasError())
+            if (response != null && !response.HasError())
             {
-                return default(T);
+                return response.Data;
             }
 
-            return eventsListData.Data;
+            return default(T);
         }
 
     }

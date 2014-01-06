@@ -34,27 +34,27 @@ namespace UWOpenDataWindowsBase.Utilities
 
         public async Task<Response<T>> GetData<T>(String storageKey, Func<CancellationToken, Task<Response<T>>> downloadFunc, CancellationToken cancellationToken)
         {
-            //cancellationToken.ThrowIfCancellationRequested();
-            //ThrowIfStorageManagerNotInstantiated();
+            cancellationToken.ThrowIfCancellationRequested();
+            ThrowIfStorageManagerNotInstantiated();
 
-            //if (ShouldDownloadData(storageKey))
-            //{
-            //    var data = await downloadFunc(cancellationToken);
-            //    cancellationToken.ThrowIfCancellationRequested();
+            if (ShouldDownloadData(storageKey))
+            {
+                var data = await downloadFunc(cancellationToken);
+                cancellationToken.ThrowIfCancellationRequested();
 
-            //    if (!data.HasError())
-            //    {
-            //        AddOrUpdateDataTimeStamp(storageKey);
-            //        _storageManager.AddOrUpdateValue(storageKey, data);
-            //    }
-            //    else
-            //    {
-            //        RemoveDataTimeStamp(storageKey);
-            //        _storageManager.DeleteKey(storageKey);
-            //    }
-            //}
+                if (!data.HasError())
+                {
+                    AddOrUpdateDataTimeStamp(storageKey);
+                    _storageManager.AddOrUpdateValue(storageKey, data);
+                }
+                else
+                {
+                    RemoveDataTimeStamp(storageKey);
+                    _storageManager.DeleteKey(storageKey);
+                }
+            }
 
-            //return _storageManager.GetValueOrDefault<Response<T>>(storageKey, null);
+            return _storageManager.GetValueOrDefault<Response<T>>(storageKey, null);
         }
 
         public Boolean ShouldDownloadData(DataKey key)
