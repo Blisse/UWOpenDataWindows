@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BLISS-THINKPAD</Machine>
+    <WindowsUser>Victor</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>78641c95-29c1-4584-b543-86faf7310d93</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\UWOpenDataW8.exe">
+      <PackagePath>UWOpenDataW8.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.MvvmLightLibs.4.2.30.1\lib\win81\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.MvvmLightLibs.4.2.30.1\lib\win81\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.MvvmLightLibs.4.2.30.1\lib\win81\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.CommonServiceLocator.1.2.2\lib\portable-net4+sl4+wp7+win8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataWindowsBase\bin\Debug\UWOpenDataWindowsBase.dll">
+      <PackagePath>UWOpenDataWindowsBase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataWindowsBase\bin\Debug\UWOpenDataLib.dll">
+      <PackagePath>UWOpenDataLib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataWindowsBase\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\Fonts\OpenSans-Regular.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\Fonts\OpenSans-Bold.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\Pages\HomePage.xbf">
+      <PackagePath>Pages\HomePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

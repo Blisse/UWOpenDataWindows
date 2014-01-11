@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BLISS-THINKPAD</Machine>
+    <WindowsUser>Victor</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>78641c95-29c1-4584-b543-86faf7310d93</PackageIdentityName>
+    <RegisteredManifestChecksum>93E6BD57695D5BF59127D4ADAD0769CCB58EDE1B7FBAD26F9B57287BDB143085</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>78641c95-29c1-4584-b543-86faf7310d93_1.0.0.0_neutral__mj2y49482qz0c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>78641c95-29c1-4584-b543-86faf7310d93_mj2y49482qz0c!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>78641c95-29c1-4584-b543-86faf7310d93</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Victor</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-01-11T22:05:42.512</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\UWOpenDataW8.exe">
+      <PackagePath>UWOpenDataW8.exe</PackagePath>
+      <Modified>2014-01-11T22:20:11.968</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.MvvmLightLibs.4.2.30.1\lib\win81\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+      <Modified>2014-01-11T20:05:24.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.MvvmLightLibs.4.2.30.1\lib\win81\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+      <Modified>2014-01-11T20:05:24.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.MvvmLightLibs.4.2.30.1\lib\win81\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+      <Modified>2014-01-11T20:05:24.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\OpenData\packages\Portable.CommonServiceLocator.1.2.2\lib\portable-net4+sl4+wp7+win8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+      <Modified>2014-01-11T20:05:23.480</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataWindowsBase\bin\Debug\UWOpenDataWindowsBase.dll">
+      <PackagePath>UWOpenDataWindowsBase.dll</PackagePath>
+      <Modified>2014-01-11T22:05:26.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataWindowsBase\bin\Debug\UWOpenDataLib.dll">
+      <PackagePath>UWOpenDataLib.dll</PackagePath>
+      <Modified>2014-01-11T22:05:26.505</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataWindowsBase\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2014-01-11T20:07:28.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\Fonts\OpenSans-Regular.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Regular.ttf</PackagePath>
+      <Modified>2014-01-11T19:54:06.615</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\Fonts\OpenSans-Bold.ttf">
+      <PackagePath>Assets\Fonts\OpenSans-Bold.ttf</PackagePath>
+      <Modified>2014-01-11T19:54:13.574</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-01-11T18:40:13.229</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-01-11T18:40:13.230</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-01-11T18:40:13.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-01-11T18:40:13.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-01-11T22:20:11.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\Pages\HomePage.xbf">
+      <PackagePath>Pages\HomePage.xbf</PackagePath>
+      <Modified>2014-01-11T22:20:11.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Victor\Documents\GitHub\UWOpenData\UWOpenDataWindows\UWOpenDataW8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-01-11T22:19:47.448</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -16,6 +16,9 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
+using UWOpenDataW8.Pages;
+using UWOpenDataW8.ViewModels;
+using UWOpenDataWindowsBase.Utilities;
 
 namespace UWOpenDataW8
 {
@@ -33,6 +36,7 @@ namespace UWOpenDataW8
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
+        public static ViewModelLocator ViewModelLocator { get; private set; }
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
@@ -76,7 +80,11 @@ namespace UWOpenDataW8
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+
+                // Custom Initialization
+                ViewModelLocator = Current.Resources["ViewModelLocator"] as ViewModelLocator;
+
+                rootFrame.Navigate(typeof(HomePage), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();
