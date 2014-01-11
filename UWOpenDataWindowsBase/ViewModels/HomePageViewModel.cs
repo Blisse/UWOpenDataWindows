@@ -108,15 +108,17 @@ namespace UWOpenDataWindowsBase.ViewModels
             var eventsListData = await GetData(EventsHolidaysListPropertyName, UwOpenDataApi.GetEventsHolidayData,
                 cancellationToken);
             
-            EventsHolidaysList = new ObservableCollection<HolidaysData>(eventsListData.data);
-
-            foreach (var holidayData in EventsHolidaysList)
+            foreach (var holidayData in eventsListData.data)
             {
                 DateTime holidayDateTime;
                 
                 if (DateTime.TryParse(holidayData.date, out holidayDateTime))
                 {
-                    Debug.WriteLine(holidayDateTime);
+                    if (holidayDateTime.ToUniversalTime().Date >= DateTime.UtcNow.Date)
+                    {
+                        EventsHolidaysList.Add(holidayData);
+                        Debug.WriteLine(holidayDateTime);
+                    }
                 }
             }
         }
@@ -130,9 +132,6 @@ namespace UWOpenDataWindowsBase.ViewModels
             {
                 WeatherData = weatherData.data;
             }
-
         }
-
-
     }
 }

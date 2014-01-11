@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -37,6 +38,9 @@ namespace UWOpenDataWindowsBase.Utilities
             cancellationToken.ThrowIfCancellationRequested();
             ThrowIfStorageManagerNotInstantiated();
 
+            Debug.WriteLine("StorageKey: " + storageKey);
+            Debug.WriteLine(ShouldDownloadData(storageKey) ? "Downloading new data" : "Getting cached data");
+
             if (ShouldDownloadData(storageKey))
             {
                 var data = await downloadFunc(cancellationToken);
@@ -49,8 +53,10 @@ namespace UWOpenDataWindowsBase.Utilities
                 }
                 else
                 {
+                    Debug.WriteLine("An error has occurred with the downloaded data");
                     RemoveDataTimeStamp(storageKey);
                     _storageManager.DeleteKey(storageKey);
+                    return null;
                 }
             }
 
@@ -64,11 +70,13 @@ namespace UWOpenDataWindowsBase.Utilities
             {
                 return true;
             }
-
-            // data has expired 
-            if (DateTime.UtcNow >= _dataKeyToTimeStampDictionary[key])
+            else
             {
-                return true;
+                // data has expired 
+                if (DateTime.UtcNow >= _dataKeyToTimeStampDictionary[key])
+                {
+                    return true;
+                }
             }
 
             return false;
@@ -98,13 +106,11 @@ namespace UWOpenDataWindowsBase.Utilities
         {
             if (_dataKeyToTimeStampDictionary.ContainsKey(key))
             {
-                _dataKeyToTimeStampDictionary[Constants.EventsHolidaysDataKey] =
-                    DateTime.UtcNow.AddMinutes(Constants.DataCacheTimeInMinutes);
+                _dataKeyToTimeStampDictionary[key] = DateTime.UtcNow.AddMinutes(Constants.DataCacheTimeInMinutes);
             }
             else
             {
-                _dataKeyToTimeStampDictionary.Add(Constants.EventsHolidaysDataKey,
-                    DateTime.UtcNow.AddMinutes(Constants.DataCacheTimeInMinutes));
+                _dataKeyToTimeStampDictionary.Add(key,DateTime.UtcNow.AddMinutes(Constants.DataCacheTimeInMinutes));
             }
         }
 

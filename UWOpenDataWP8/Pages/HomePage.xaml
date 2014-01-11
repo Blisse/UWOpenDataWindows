@@ -27,11 +27,35 @@
 
         <Grid x:Name="ContentPanel" Grid.Row="1">
             <phone:Pivot>
-                <phone:PivotItem Header="Events">
-                    
-                </phone:PivotItem>
-                <phone:PivotItem Header="Weather">
-
+                <phone:PivotItem Header="Home">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock>
+                                <Run Text="Current Temp."/>
+                                <Run Text="{Binding WeatherData.temperature_current_c}"/>
+                            </TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <ListBox ItemsSource="{Binding EventsHolidaysList}">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Grid.Row="0" Text="{Binding name}"></TextBlock>
+                                            <TextBlock Grid.Row="1" Text="{Binding date, Converter={StaticResource UpcomingDateTimeToRichStringConverter}}"></TextBlock>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Grid>
+                    </Grid>
                 </phone:PivotItem>
             </phone:Pivot>
         </Grid>
